@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+}
+.header-div {
+  display: Flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  width: 100vw;
+}
+header h1 {
+  font-family: fantasy;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 12px;
+}
+header h1::first-letter {
+  font-size: 48px;
+  color: red;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none !important;
+  margin-top: 20px;
+}
+.menu li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+.menu li a:hover {
+  background-color: red;
+  color: white;
+  border-radius: 9px;
+  padding: 5px;
+  cursor: url(https://ani.cursors-4u.net/others/oth-9/oth893.cur), auto !important;
+}
+
+.menu li a:hover {
+  background-color: red;
+  color: white;
+  border-radius: 9px;
+  padding: 5px;
+}
+.menu li a:active {
+  background-color: chartreuse;
+}
+.background-section {
+  position: relative;
+  margin-top: 40px;
+  min-height: 100vh;
+  background: url(/images/background-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.background-section h2 {
+  font-family: fantasy;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.main-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  width: 70%;
+  height: 80%;
+  background-color: hsl(36, 100%, 90%, 0.2);
+  padding: 20px;
+}
+.main-text {
+  border-radius: 9px;
+  background-color: hsl(60, 56%, 91%);
+  padding: 25px;
+  max-width: 400px;
+  margin: auto;
+  text-align: Center;
+  font-size: 22px;
+}
+
+.button {
+  text-decoration: none;
+  background-color: red;
+  border-radius: 9px;
+  min-width: 100px;
+  font-size: 22px;
+  color: #fff;
+  padding: 5px;
+}
+.button:hover {
+  background-color: #000;
+}
