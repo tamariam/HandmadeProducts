@@ -3,31 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Handmade Products</title>
+    <title>Home Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/708a2505bb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
-      <header>
+ 
+      <!-- header section -->
+      <header class="main-header">
         <div class="header-div">
           <img
-            src="/images/optimized-image.jpeg"
+            src="/images/logo.jpeg"
             alt="artisan heaven logo"
             class="logo-img"
           />
-          <h1>The Artisan Collective</h1>
+          <!-- navigation links -->
+          <nav>
+            <ul class="menu">
+              <li>
+                <a class="nav-link active" href="index.html" class="">Home</a>
+              </li>
+              <li>
+                <a class="nav-link" href="about.html" class="">About Us</a>
+              </li>
+              <li>
+                <a class="nav-link" href="products.html" class="">Products</a>
+              </li>
+              <li>
+                <a class="nav-link" href="Checkout.htmp" class=""
+                  >Cart/Checkout</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="contact.html" class="">Contuct Us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="navigation-bar">
-          <ul class="menu">
-            <li><a href="#" class="">Home</a></li>
-            <li><a href="#" class="">About Us</a></li>
-            <li><a href="#" class="">Products</a></li>
-            <li><a href="#" class="">Shopping Cart</a></li>
-            <li><a href="#" class="">Contuct Us</a></li>
-          </ul>
-        </nav>
       </header>
+      <!-- background section -->
       <section class="background-section">
         <div class="main-text-div">
           <h2>Welcome to Artisan Haven</h2>
@@ -37,9 +54,29 @@
             and vibrant artwork, each piece tells a story. Browse our unique
             collections and support small makers who turn creativity into craft.
           </p>
-          <a href="#" class="button">Explore More</a>
+          <a href="products.html" class="button">Explore More</a>
         </div>
       </section>
-    </div>
+      <footer>
+        <div class="footer-container">
+           <a
+            class="footer-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label=" faebook-page"
+            ><i class="fa-brands fa-facebook"></i></i
+          ></a>
+          <p>&copy 2025 Artisans Heaven</p>
+         
+          <a
+            class="footer-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            aria-label="Instagram page"
+            ><i class="fa-brands fa-instagram"></i></i
+          ></a>
+        </div>
+      </footer>
+   
   </body>
 </html>
