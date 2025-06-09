@@ -1,3 +1,4 @@
+/* styles for products page */
 .product-container {
   display: Flex;
   align-items: center;
@@ -36,8 +37,8 @@ h2 {
   padding: 1.5rem 0;
   color: rgb(165, 42, 42);
 }
-h3,
-p {
+.product-card h3,
+.product-card p {
   font-size: 20px;
   color: #fff;
   margin: 0.5rem 0;
@@ -56,4 +57,90 @@ p {
 .btn:hover {
   background-color: burlywood;
   color: white;
+}
+
+/* Styles for checkout page */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.table-container h2 {
+  color: #008000f5;
+}
+.cart-section {
+  width: 100%;
+  flex: 1;
+}
+.table {
+  width: 80%;
+  margin: auto;
+}
+
+.table th {
+  background-color: red;
+  color: #fff;
+  padding: 0.8rem 0;
+}
+.table td {
+  text-align: Center;
+  width: 33%;
+  padding: 0.8rem;
+}
+.table input[type="number"] {
+  width: 150px;
+  padding: 0.2rem;
+}
+.product-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+.product-image {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.details-div {
+  display: Flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.remove-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+  background-color: brown;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background-color: rgba(165, 42, 42, 0.589);
+}
+.checkout-div {
+  text-align: right;
+  width: 80%;
+  padding: 0.4rem 0;
+}
+.checkout-btn {
+  background-color: #008000;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.checkout-btn:hover {
+  background-color: #00800086;
 }
