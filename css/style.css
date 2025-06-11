@@ -360,4 +360,20 @@ details summary {
     gap: 3rem;
     margin-bottom: 3rem;
   }
+
+  .table th {
+    padding: 0;
+  }
+  .table td {
+    text-align: Center;
+    width: 16%;
+    padding: 0;
+  }
+  .table input[type="number"] {
+    width: 10px;
+    padding: 0;
+  }
+  .checkout-div {
+    text-align: center;
+  }
 }

@@ -1,10 +1,13 @@
 /* styles for products page */
+
 .product-container {
   display: Flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1rem;
 }
 .products-header {
   text-align: Center;
@@ -97,6 +100,7 @@ h2 {
   align-items: center;
   gap: 1rem;
   margin: auto;
+  padding: 1rem 0;
 }
 .product-image {
   width: 70px;
@@ -129,6 +133,7 @@ h2 {
   text-align: right;
   width: 80%;
   padding: 0.4rem 0;
+  margin-top: 15px;
 }
 .checkout-btn {
   background-color: #008000;
@@ -139,8 +144,39 @@ h2 {
   cursor: pointer;
   margin-top: 6px;
   font-size: 18px;
+  transition: transform 2s;
 }
 
 .checkout-btn:hover {
   background-color: #00800086;
+  transform: scale(0.9);
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  height: 3px;
+  border: none;
+  background-color: #444;
+}
+
+/* media queries for checkout page */
+
+@media (max-width: 587px) {
+  .table th {
+    padding: 0.2rem;
+  }
+  .table td {
+    text-align: Center;
+    width: 16%;
+    padding: 0.2rem;
+  }
+  .table input[type="number"] {
+    width: 90px;
+    padding: 0;
+  }
+  .product-div {
+    flex-direction: column;
+    padding: 0.2rem;
+  }
 }
