@@ -46,23 +46,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const clearBtn = document.querySelector(".clear-btn");
     console.log(clearBtn);
+
     if (clearBtn) {
       clearBtn.addEventListener("click", function () {
-        //prompt the user to confirm
-        if (confirm("Do you want to clear cart?")) {
-          //empty the cart
+        if (cart.length === 0) {
+          alert("cart is empty");
+        } else {
+          //prompt the user to confirm
+          if (confirm("Do you want to clear cart?")) {
+            //empty the cart
 
-          cart = [];
-          localStorage.removeItem("cart");
+            cart = [];
+            localStorage.removeItem("cart");
 
-          updateCart();
+            updateCart();
+          }
         }
       });
     }
-    updateCart();
   }
-  updateCartCounter();
+
+  updateCart();
 });
+updateCartCounter();
 
 // add selected items to the local storqage adn card
 
@@ -107,7 +113,7 @@ function updateCart() {
             }" class="quantity-input" data-index="${index}"></td>
             <td>€${item.price.toFixed(2)}</td>
             <td>€${subtotal.toFixed(2)}</td>
-            <td><button class="remove-btn" data-index="${index}">Remove</button></td>`;
+            <td><button class="remove-btn" data-index="${index}"><i class="icon fa-solid fa-x"></i></i></button></td>`;
 
     // Insert the row into the table
     tableItems.appendChild(row);

@@ -36,7 +36,7 @@
               <a class="nav-link" href="products.html" >Products</a>
             </li>
             <li>
-              <a class="nav-link active" href="checkout.html ">Cart/Checkout <span id="cart-count">(0)</span></a>
+              <a class="nav-link active" href="checkout.html ">Cart <span id="cart-count">(0)</span></a>
             </li>
             <li>
               <a class="nav-link " href="contact.html" >Contact Us</a>
@@ -50,32 +50,7 @@
 
 <Section  class="cart-section">
   <div class="table-container">
-    <h2>Shopping Bag</h2>
-    <!-- <table class="table">
-      <thead>
-       <tr>
-        <th>Product</th>
-        <th> Quantity</th>
-        <th><b>Subtotal</b></th>
-       </tr>
-      </thead>
-      <tbody id="cart-table">
-        <tr>
-           <td >
-        <div class="product-div" >
-          < <img class="product-image" src="/images/candle.webp" /> -->
-          <!-- <div class="details-div">
-            <div><strong>Product Name </strong></div>
-            <div style="color: gray;">&euro;19.99</div>
-            <button class="remove-btn">Remove<i class="fa-solid fa-xmark"></i></button>
-          </div>
-        </div>
-      </td>
-      <td><input type="number" min="1" value="1"></td>
-      <td>Subtotal</td>
-        </tr>
-      </tbody>
-    </table>  -->
+    <h2>Shopping Cart</h2>
     <table class="table">
             <thead>
               <tr>
@@ -107,9 +82,10 @@
     <hr>
   </div>
       <div class="checkout-div">
-      <h3>Total: <Span class="total-amount">&euro;</Span></h3>
-      <button class="clear-btn">Clear Cart</button>
-      <button class="checkout-btn">Proceed to Chekout</button>
+      <h3>Total: <Span class="total-amount">€</Span></h3>
+     <button class="shop-btn" onclick="location.href='products.html'">Shop Now</button>
+     <button  class="clear-btn">Clear Cart</button>
+      <button class="checkout-btn">Chekout</button>
 
     </div>
 
