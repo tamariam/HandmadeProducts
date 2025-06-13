@@ -152,12 +152,14 @@ function updateQuantity() {
   //loop through each remove btn
   removeButtons.forEach((button) => {
     button.addEventListener("click", function (e) {
-      const rowIndex = e.target.dataset.index;
-      //remove 1 element from the cart
-      cart.splice(rowIndex, 1);
-      //update cart
-      localStorage.setItem("cart", JSON.stringify(cart));
-      updateCart();
+      if (confirm("Do you want to remove this product from your cart?")) {
+        const rowIndex = e.target.dataset.index;
+        //remove 1 element from the cart
+        cart.splice(rowIndex, 1);
+        //update cart
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCart();
+      }
     });
   });
 }
